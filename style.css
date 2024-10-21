@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open San", sans-serif;
+  background-color: black;
+}
+
+/* fonts */
+
+.card-title {
+  font-size: 3.5rem;
+  margin-top: 100px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.card-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  padding-left: 70px;
+}
+
+/* Banner Wrap section */
+.banner-wrap {
+  background-image: url(./assests/netflix-background-image.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 75%;
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  margin: 0 100px;
+  padding-top: 45px;
+}
+
+.navbar > img {
+  width: 148px;
+  height: 50px;
+}
+
+.navbar > a {
+  padding: 7px 17px;
+  color: white;
+  background: rgb(229, 9, 20);
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.get-started-form .material-icons {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.navbar a:hover {
+  background-color: rgb(204, 8, 17);
+}
+
+.banner-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 120px);
+  text-align: center;
+}
+
+.email-form-title {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.get-started-form {
+  position: relative;
+  height: 60px;
+  display: flex;
+}
+.get-started-form input {
+  height: 60px;
+  width: 400px;
+  margin-right: 10px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.659);
+  color: #999999;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.get-started-form input:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+.get-started-form label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 56px;
+  color: #a9a8a8;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.get-started-form button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  min-height: 60px;
+  padding: 0 26px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.get-started-form button:hover {
+  background-color: rgb(204, 8, 17);
+}
+
+.get-started-form .material-icons {
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  font-weight: 400;
+}
+
+/* Curved section */
+
+.curved-section {
+  position: relative;
+  top: -45px;
+  width: 100%;
+  height: 100px;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(33, 13, 22) 16%,
+    rgb(184, 40, 105),
+    rgb(229, 9, 20),
+    rgb(184, 40, 105),
+    rgb(33, 13, 22) 84%
+  );
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.curved-bottom {
+  position: relative;
+  top: -141px;
+  width: 100%;
+  height: 100px;
+
+  background-color: rgb(0, 0, 0);
+  background-image: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    none;
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  z-index: 1;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.trending-movies {
+  align-items: left;
+  margin-top: -180px;
+  margin-left: 150px;
+  z-index: 100;
+  position: absolute;
+}
+
+.trending-movies h1 {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.select-items {
+  outline: none;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  margin: 2px 8px 10px 0;
+  margin-top: 40px;
+}
+
+.custom-select select {
+  appearance: none;
+  outline: none;
+  border: 1px solid #999999;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 36px 8px 12px;
+  line-height: 24px;
+}
+
+.custom-select .material-icons {
+  position: absolute;
+  right: 10px;
+  top: 80%;
+  transform: translateY(-100%);
+  color: white;
+  pointer-events: none;
+}
+
+.carousel {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 920px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  position: relative;
+  margin-right: 15px;
+}
+
+.slide img {
+  border-radius: 40px;
+  width: 200px;
+  height: auto;
+  padding: 8px 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.slide:hover img,
+.slide:hover .number {
+  transform: scale(1.05);
+}
+
+.number {
+  position: absolute;
+  top: 130px;
+  margin-left: -10px;
+  font-size: 90px;
+  color: #0b0a0a;
+  padding: 5px 5px;
+  font-weight: 700;
+  text-shadow: -1px -1px 0 #e3e3e3, 1px -1px 0 #cecece, -1px 1px 0 #e3e3e3,
+    1px 1px 0 #cecece, 5px 5px 5px rgba(0, 0, 0, 0.887);
+}
+
+.number:hover,
+.slide img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-button {
+  position: absolute;
+  top: 65%;
+  width: 30px;
+  height: 120px;
+  transform: translateY(-50%);
+  background: #1a1a1a;
+  border: #bababa;
+  border-radius: 8px;
+  color: #bababa;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-button:hover {
+  background-color: rgba(52, 51, 51);
+}
+
+#prev {
+  left: -10px;
+}
+
+#next {
+  right: -50px;
+}
+
+#prev .material-icons,
+#next .material-icons {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+/* More Reasons to join */
+
+#more-reasons-to-join {
+  margin-top: 300px;
+  color: white;
+  margin-left: 150px;
+  width: 1100px;
+}
+
+#more-reasons-to-join h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#more-reasons-to-join p {
+  margin-left: -70px;
+  font-size: 16px;
+}
+
+#more-reasons-to-join h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reason-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rBoxOne,
+.rBoxTwo,
+.rBoxThree,
+.rBoxFour {
+  height: 328px;
+  width: 234px;
+  padding: 24px 16px 128px;
+  flex: 0 0 auto;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+    149deg,
+    rgb(25, 34, 71) 0%,
+    rgb(33, 14, 23) 99.08%
+  );
+  border-radius: 16px;
+}
+
+.rBoxOne img,
+.rBoxThree img {
+  position: relative;
+  height: 70px;
+  width: auto;
+  left: 140px;
+  bottom: -90px;
+}
+
+.rBoxFour img {
+  position: relative;
+  height: 70px;
+  width: auto;
+  left: 140px;
+  bottom: -50px;
+}
+
+.rBoxTwo img {
+  position: relative;
+  height: 65px;
+  width: auto;
+  left: 140px;
+  bottom: -68px;
+}
+
+/* footer section */
+.footer {
+  background: black;
+}
+
+.footer-items {
+  margin: 0 47.5px;
+  padding: 70px 45px;
+}
+
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer ul li {
+  color: #757575;
+}
+
+.footer-links li {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.footer ul li:hover {
+  color: #757575;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.questions-title {
+  color: #757575;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.questions-title:hover {
+  text-decoration: underline;
+  color: #757575;
+  cursor: pointer;
+}
+
+.footer-links {
+  list-style-type: none;
+  columns: 4;
+  padding: 0;
+}
+
+.language {
+  height: 53px;
+  width: 142px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #999999;
+  padding: 0 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+.language select {
+  padding: 10px;
+  width: 100%;
+  margin-left: 10px;
+  border: none;
+  appearance: none;
+  background: black;
+  color: #999999;
+  background: url(./assests/noun-down-caret-427197.png) 100% no-repeat;
+}

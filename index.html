@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Netflix</title>
+    <link rel="icon" href="assests/netflixfavicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="banner-wrap">
+        <div class="overlay"></div>
+        <div class="navbar">
+          <img
+            class="logo"
+            src="./assests/netflix-logo.png"
+            alt="Netflix Logo"
+          />
+          <a href="https://www.netflix.com/login" target="_blank">Sign In</a>
+        </div>
+        <div class="banner-container">
+          <h1 class="card-title">
+            Unlimited movies, TV<br />
+            shows and more
+          </h1>
+          <h2 class="card-subtitle">Starts at R49. Cancel anytime.</h2>
+          <form>
+            <h3 class="email-form-title">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h3>
+            <div class="get-started-form">
+              <input
+                type="text"
+                id="email"
+                required
+                placeholder="Email address"
+              />
+
+              <button type="button">
+                Get Started<span class="material-icons">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="curved-section"></div>
+      <div class="curved-bottom"></div>
+      <div class="trending-movies">
+        <h1>Trending Now</h1>
+        <div class="select-items">
+          <div class="custom-select">
+            <select>
+              <option label="South Africa" value="local" selected>
+                South Africa
+              </option>
+              <option label="Global" value="global">Global</option>
+            </select>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+
+          <div class="custom-select">
+            <select>
+              <option label="Movies" value="movies" selected>Movies</option>
+              <option label="TV shows" value="TV shows">TV Shows</option>
+            </select>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <button id="prev" class="nav-button" style="display: none">
+            <span class="material-icons"> arrow_back_ios</span>
+          </button>
+          <div class="slides">
+            <div class="slide">
+              <img src="./assests/Trouble.jpg" alt="Slide 1" />
+              <div class="number">1</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/2.jpg" alt="Slide 2" />
+              <div class="number">2</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/3.jpg" alt="Slide 3" />
+              <div class="number">3</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/4.jpg" alt="Slide 4" />
+              <div class="number">4</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/5.jpg" alt="Slide 5" />
+              <div class="number">5</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/6.jpg" alt="Slide 6" />
+              <div class="number">6</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/7.jpg" alt="Slide 7" />
+              <div class="number">7</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/8.jpg" alt="Slide 8" />
+              <div class="number">8</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/9.jpg" alt="Slide 9" />
+              <div class="number">9</div>
+            </div>
+            <div class="slide">
+              <img src="./assests/10.jpg" alt="Slide 10" />
+              <div class="number">10</div>
+            </div>
+          </div>
+        </div>
+        <button id="next" class="nav-button">
+          <span class="material-icons"> arrow_forward_ios </span>
+        </button>
+      </div>
+    </section>
+
+    <section id="more-reasons-to-join">
+      <h1>More Reasons to Join</h1>
+      <div class="reason-container">
+        <div class="rBoxOne">
+          <h4>Enjoy on your TV</h4>
+          <p>
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </p>
+          <img src="./assests/tv2.png" />
+        </div>
+        <div class="rBoxTwo">
+          <h4>Download your shows to watch offline</h4>
+          <p>Save your favorites easily and always have something to watch.</p>
+          <img src="./assests/arrow-down.png" />
+        </div>
+        <div class="rBoxThree">
+          <h4>Watch everywhere</h4>
+          <p>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+          <img src="./assests/telescope.png" />
+        </div>
+        <div class="rBoxFour">
+          <h4>Create profiles for kids</h4>
+          <p>
+            Send kids on adventures with their favorite characters in a space
+            made just for them — free with your membership.
+          </p>
+          <img src="./assests/friends.png" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer-items">
+        <div class="footer-top">
+          <a href="" class="questions-title">Questions? Contact us.</a>
+        </div>
+        <ul class="footer-links">
+          <li>FAQ</li>
+          <li>Help Centre</li>
+          <li>Account</li>
+          <li>Media Centre</li>
+          <li>Investor Relations</li>
+          <li>Jobs</li>
+          <li>Ways to Watch</li>
+          <li>Terms of Use</li>
+          <li>Privacy</li>
+          <li>Cookie Preferences</li>
+          <li>Corporate Information</li>
+          <li>Contact Us</li>
+          <li>Speed Test</li>
+          <li>Legal Notices</li>
+          <li>Only on Netflix</li>
+        </ul>
+        <div class="language">
+          <i class="material-icons">language</i>
+          <select name="languages" id="languages">
+            <option value="English">English</option>
+            <option value="Swahili">Swahili</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
