@@ -29,3 +29,28 @@ prevButton.addEventListener("click", () => {
 
 // Initial update to set up the carousel
 updateCarousel();
+
+const btns = document.querySelectorAll(".question-btn");
+const questionTitles = document.querySelectorAll(".question-title");
+
+questionTitles.forEach(function (title) {
+  title.addEventListener("click", function (e) {
+    const question = e.currentTarget.parentElement;
+    question.classList.toggle("show-text");
+  });
+});
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const question = e.currentTarget.parentElement.parentElement;
+    question.classList.toggle("show-text");
+  });
+});
+
+// if clicked outside of window, it closes
+window.addEventListener("click", function (e) {
+  const question = document.querySelector(".question");
+  if (!question.contains(e.target)) {
+    question.classList.remove("show-text");
+  }
+});

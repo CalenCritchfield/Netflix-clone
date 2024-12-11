@@ -118,11 +118,12 @@ p {
   color: #999999;
   border: 1px solid gray;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .get-started-form input:focus {
   outline: none;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .get-started-form label {
@@ -487,4 +488,110 @@ p {
   background: black;
   color: #999999;
   background: url(./assests/noun-down-caret-427197.png) 100% no-repeat;
+}
+
+.questions {
+  margin-top: 50px;
+  margin-left: 150px;
+  color: white;
+}
+
+.title h2 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.section-center {
+  max-width: 1000px;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 15px;
+  background-color: #2d2d2d;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.question-title p {
+  font-size: 20px;
+}
+
+.question-btn {
+  color: white;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  height: 20px;
+}
+
+.question-btn:active {
+  transform: rotate(45deg);
+}
+
+.plus-icon,
+.minus-icon {
+  font-size: 20px;
+  color: white;
+  padding-right: 30px;
+}
+
+.question-title:hover {
+  background-color: #5c5c5c;
+}
+
+.question-title:active {
+  background-color: #5c5c5c;
+}
+
+.question-text p {
+  padding-left: 0;
+  padding: 10px;
+  font-size: 17px;
+  background-color: #2d2d2d;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.question-text {
+  margin-bottom: 10px;
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+.get-started {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.get-started p {
+  color: white;
+  font-size: 18px;
+}
+
+.get-started .get-started-form input {
+  width: 600px;
+  border-radius: 5px;
 }
