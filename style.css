@@ -12,6 +12,11 @@ body {
   background-color: black;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* fonts */
 
 .card-title {
